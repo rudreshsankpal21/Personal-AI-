@@ -10,6 +10,7 @@ document.addEventListener("DOMContentLoaded", () => {
     userInput.style.height = "auto";
     userInput.style.height = userInput.scrollHeight + "px";
   });
+
   chatForm.addEventListener("submit", async (e) => {
     e.preventDefault(); // prevents default loading
     const message = userInput.value.trim(); // trim is used for trim the white spaces in the input
@@ -81,6 +82,8 @@ document.addEventListener("DOMContentLoaded", () => {
                 Error: ${text}
             </div>
         `;
+
+        chatMessages.appendChild(message);
   }
 });
 
