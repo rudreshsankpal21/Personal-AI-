@@ -79,7 +79,7 @@ document.addEventListener("DOMContentLoaded", () => {
     message.innerHTML = `
         <div class="avatar">AI</div>
             <div class="message-content" style="color:red">
-                Error: ${text}
+                Error: ${text,"Try again"}
             </div>
         `;
 
